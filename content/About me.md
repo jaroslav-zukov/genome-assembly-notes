@@ -6,5 +6,4 @@ At the moment I'm taking a Discrete Mathematics course by [Prof. Dr. Konstantino
 
 I always dreamed about bridging the gap between mathematicians, biologists and programmer. Bringing them together and working towards common goal. So I'm immensely happy to pursue this biologically relevant, computationally heavy and mathematically complex project.
 
-Here's my CV
-![[JaroslavZukovCV.pdf]]
+Here's my [CV](https://github.com/jaroslav-zukov/genome-assembly-notes/blob/1f7a93c75f3f3275a9159a0d07ee86936ac41d9a/content/Files/JaroslavZukovCV.pdf)
