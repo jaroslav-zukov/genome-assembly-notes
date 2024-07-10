@@ -4,7 +4,7 @@ DNA is composed from two strands of polynucleotides that coil around each other,
 
 Okay, let's say we have yeast sample, how do we read its DNA sequence? In general we want some machine to read the longest possible stretches of DNA that would be as accurate as possible (100% read precision). There are multiple [[DNA sequencing technologies]] that attempt to do so. Usually one uses a combination of multiple technologies to overcome the drawbacks of each single technology. At the end once receives a collection of sequences of various lengths between 150 and 30000 bp with some read errors in them.
 
-The classical way to state **genome assembly problem**: Having large amount of substring we want to reconstruct the original sequence.
+The classical way to state **genome assembly problem**: Having large amount of substring we want to reconstruct the original sequence. Or we can restate the problem in a slightly different way - How do we reconstruct the whole genomic sequence from the sequencing data?
 ![[Pasted image 20240709162203.png]]
 
 What I describe here is so called *de-novo* assembly, which is the process of reconstructing the initial DNA sequence without the reference genome of a similar sample (same species).
