@@ -10,6 +10,7 @@
 - OLC on GPU https://github.com/PMuchina/GPU-Accelerated-de-novo-assembly
 - Miniasm https://github.com/lh3/miniasm
 - Peregrine https://github.com/cschin/peregrine-2021
+- Verkko https://github.com/marbl/verkko
 
 Support tools:
 - HapDup https://github.com/KolmogorovLab/hapdup
