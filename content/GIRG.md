@@ -1,3 +1,5 @@
+>[!Warning]- DRAFT
+
 This but inhomogeneous
 https://www.wikiwand.com/en/Random_geometric_graph
 

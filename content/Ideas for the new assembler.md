@@ -1,3 +1,5 @@
+>[!Warning]- DRAFT
+
 ## Theory
 If we were to encode the reads with an distance/similarity function into an overlap random graph by changing the probabilities of specific edges, than we could receive something similar to a lossless representation of the reads inside the graph space. And in that weighted graph space we could then search for a specific properties, like a hamiltonian path with an even coverage.
 

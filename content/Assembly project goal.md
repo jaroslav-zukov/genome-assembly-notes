@@ -1,3 +1,5 @@
+>[!Warning]- DRAFT
+
 Ultimately I want to build new genome assembler that would 
 1. use exclusively Oxford Nanopore data (of one cell for one assembly)
 2. drop the legacy limitations

@@ -23,15 +23,15 @@ We propose a radically new approach to this problem. Instead of collecting sever
 
 The implementation should be done end-to-end, massively parallelizable and designed to run on a GPU clusters (it has just more FLOPS).
 
-Proposed approach would work only in the case if following **assumption** holds:
+Proposed approach would work **only** in the case if following **assumption** holds:
 > [!question]-   Same DNA regions must produce very similar signal waves
 
 ### Advantages
-The process of basecalling is *lossy* in nature, and also it's hugely biased on the human data - it has larger basecall error on fish and invertebrates because of the training dataset for the basecalling models. We take in consideration much more information about the read - context of the neighboring nucleotides and chemical modifications. We are also agnostic to the pore chemistry - the algorithm will work with a new pore type. The only constraint is the consistency of the pore chemistry for one assembly (because same reads have to produce very similar signals)
+The process of basecalling is *lossy* in nature, and it's also biased on the human data - it has larger basecall error on fish and invertebrates because of the training dataset for the basecalling models. We take in consideration much more information about the read - context of the neighboring nucleotides and chemical modifications. We are also agnostic to the pore chemistry - the algorithm will work with a new pore type. The only constraint is the consistency of the pore chemistry for one assembly (because same reads have to produce very similar signals)
 
 ## Plan of action
 1. Verify assumptions
-2. Construct the theoretical solution + build the proof of concept
+2. Construct the theoretical solution and build the proof of concept
 	1. Find a distance function for finding overlaps from DFT transformed waves
 	2. Research how exactly can we apply [[GIRG]]s - theoretical solution
 		1. encoding of $\mathbb{R}^n$ into the graph with the distance function
