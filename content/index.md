@@ -11,8 +11,8 @@ We propose a radically new approach to this problem. Instead of collecting sever
 ### Proposed approach
 1. Sequence the DNA with Oxford Nanopore (Generate Nanopore signal)
 2. Run discrete Fourier transform on the nanopore signal (Reads → $\mathbb{R}^n$ )
-3. Convert the reads in $\mathbb{R}^n$ into geometric inhomogeneous random graph ([[GIRG]])
-	1. Represent each read in a vertex
+3. Convert the reads from $\mathbb{R}^n$ into geometric inhomogeneous random graph ([[GIRG]])
+	1. Represent each read as a vertex
 	2. Apply the *distance* function that calculates overlap quality of signals
 	3. Assign the probability of an edge to the *distance* between two nodes
 4. Extract a couple of most probable graphs with certain properties
@@ -32,7 +32,9 @@ The process of basecalling is *lossy* in nature, and it's also biased on the hum
 ## Plan of action
 1. Verify assumptions
 2. Construct the theoretical solution and build the proof of concept
-	1. Find a distance function for finding overlaps from DFT transformed waves
+	1. Create a distance function for finding overlaps from DFT transformed waves
+		1. somehow leverage the regularity of the trig functions
+		2. differentiate between prefix and postfix overlaps
 	2. Research how exactly can we apply [[GIRG]]s - theoretical solution
 		1. encoding of $\mathbb{R}^n$ into the graph with the distance function
 		2. finding the most probable graphs
