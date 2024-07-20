@@ -11,7 +11,7 @@ We propose a radically new approach to this problem. Instead of collecting sever
 ### Proposed approach
 1. Sequence the DNA with Oxford Nanopore (Generate Nanopore signal)
 2. Run discrete Fourier transform on the nanopore signal (Reads → $\mathbb{R}^n$ )
-3. Convert the reads from $\mathbb{R}^n$ into geometric inhomogeneous random graph ([[GIRG]])
+3. Convert the reads from $\mathbb{R}^n$ into a random graph representation (could be [[GIRG]])
 	1. Represent each read as a vertex
 	2. Apply the *distance* function that calculates overlap quality of signals
 	3. Assign the probability of an edge to the *distance* between two nodes
