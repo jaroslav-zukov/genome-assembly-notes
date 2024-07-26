@@ -1,6 +1,6 @@
-- Flye https://github.com/mikolmogorov/Flye
+- [[Flye]] 
 - Shasta https://github.com/paoloshasta/shasta
-- Hifiasm https://github.com/chhylp123/hifiasm
+- [[Hifiasm]] 
 - GNNome-assembly https://github.com/lvrcek/GNNome-assembly
 - MaSuRCA https://github.com/alekseyzimin/masurca
 - Canu https://github.com/marbl/canu
@@ -10,7 +10,7 @@
 - OLC on GPU https://github.com/PMuchina/GPU-Accelerated-de-novo-assembly
 - Miniasm https://github.com/lh3/miniasm
 - Peregrine https://github.com/cschin/peregrine-2021
-- Verkko https://github.com/marbl/verkko
+- [[Verkko]] 
 
 Support tools:
 - HapDup https://github.com/KolmogorovLab/hapdup

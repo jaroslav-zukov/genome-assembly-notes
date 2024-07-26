@@ -5,7 +5,7 @@ Why? We have already a couple of [[Existing theoretical approaches]] and [[Exist
 There are several things that are not optimal and could be improved.
 
 - Theoretical drawbacks of current approaches
-- greedy approaches
+- greedy approaches → lower precision of the assembly graphs
 - software weren't designed in GPU clusters in mind
 	- not parallel algorithms
 - use of old software packages (legacy dependance)

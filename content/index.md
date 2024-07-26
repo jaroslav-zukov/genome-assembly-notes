@@ -30,6 +30,8 @@ Proposed approach would work **only** in the case if following **assumption** ho
 The process of basecalling is *lossy* in nature, and it's also biased on the human data - it has larger basecall error on fish and invertebrates because of the training dataset for the basecalling models. We take in consideration much more information about the read - context of the neighboring nucleotides and chemical modifications. We are also agnostic to the pore chemistry - the algorithm will work with a new pore type. The only constraint is the consistency of the pore chemistry for one assembly (because same reads have to produce very similar signals)
 
 ## Plan of action
+Here are several sub-projects
+### Main - building new raw probabilistic assembler
 1. Verify assumptions
 2. Construct the theoretical solution and build the proof of concept
 	1. Create a distance function for finding overlaps from DFT transformed waves
@@ -41,6 +43,16 @@ The process of basecalling is *lossy* in nature, and it's also biased on the hum
 	3. Try to create a unified end-to-end theoretical framework
 3. Collect a team of experienced engineers and build the thing using software best practices
 
+### Analysis of existing approaches
+There are a couple of existing solutions, which would be very helpful to analyze in order to gain some insight in the ideas used - their feasibility and precision.
+
+Following initiatives are to be considered for gaining the insight. For a couple of most recent and successful [[Existing assemblers]] explain:
+- How is the assembly done on a high level (step by step diagram)
+- What is the assembly precision and why it may be imprecise
+- What's the computational complexity
+
+**Timeline →**
+> [!info] [[Timeline of the sub-projects]]
 
 ___
 For more context:
