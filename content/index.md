@@ -10,7 +10,7 @@ We propose a radically new approach to this problem. Instead of collecting sever
 
 ### Proposed approach
 1. Sequence the DNA with Oxford Nanopore (Generate Nanopore signal)
-2. Run discrete Fourier transform on the nanopore signal (Reads → $\mathbb{R}^n$ )
+2. Run Wavelet transform on the nanopore signal (Reads → $\mathbb{R}^n$ )
 3. Convert the reads from $\mathbb{R}^n$ into a random graph representation (could be [[GIRG]])
 	1. Represent each read as a vertex
 	2. Apply the *distance* function that calculates overlap quality of signals
@@ -31,18 +31,6 @@ The process of basecalling is *lossy* in nature, and it's also biased on the hum
 
 ## Plan of action
 Here are several sub-projects
-### Main - building new raw probabilistic assembler
-1. Verify assumptions
-2. Construct the theoretical solution and build the proof of concept
-	1. Create a distance function for finding overlaps from DFT transformed waves
-		1. somehow leverage the regularity of the trig functions
-		2. differentiate between prefix and postfix overlaps
-	2. Research how exactly can we apply [[GIRG]]s - theoretical solution
-		1. encoding of $\mathbb{R}^n$ into the graph with the distance function
-		2. finding the most probable graphs
-	3. Try to create a unified end-to-end theoretical framework
-3. Collect a team of experienced engineers and build the thing using software best practices
-
 ### Analysis of existing approaches
 There are a couple of existing solutions, which would be very helpful to analyze in order to gain some insight in the ideas used - their feasibility and precision.
 
@@ -50,6 +38,22 @@ Following initiatives are to be considered for gaining the insight. For a couple
 - How is the assembly done on a high level (step by step diagram)
 - What is the assembly precision and why it may be imprecise
 - What's the computational complexity
+
+### Theoretical framing of the problem
+Imagine you have $k$ strips of paper with the same signal printed on them. Then one takes a scissors and cuts strips into multiple pieces in random places. The pieces have average length of $l$ and some length distribution $X$.
+
+The goal is to reconstruct the original signal.
+### Main - building new raw probabilistic assembler
+1. Verify assumptions
+2. Construct the theoretical solution and build the proof of concept
+	1. Create a distance function for finding overlaps from wavelet transformed waves
+		1. somehow leverage the regularity of the trig functions
+		2. differentiate between prefix and postfix overlaps
+	2. Research how exactly can we apply [[GIRG]]s - theoretical solution
+		1. encoding of $\mathbb{R}^n$ into the graph with the distance function
+		2. finding the most probable graphs
+	3. Try to create a unified end-to-end theoretical framework
+3. Collect a team of experienced engineers and build the thing using software best practices
 
 **Timeline →**
 > [!info] [[Timeline of the sub-projects]]
