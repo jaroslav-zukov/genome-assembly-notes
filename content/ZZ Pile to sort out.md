@@ -28,8 +28,3 @@ Write smaller implementational proposals, small research problems like
 2. How to extract raw signal from nanopore data - from fast5/pod5 - get the 'squiggle'
 3. How to do an FFT on a squiggle, what's the output, how to store it?
 4. How to resquiggle the sequence using the dorado basecaller to produce synthetic data
-5. Weekend project initiative - deep down research and take notes
-	1. Read the code and describe how it works (run, test, play)
-		1. Flye
-		1. canu
-		1. Spades

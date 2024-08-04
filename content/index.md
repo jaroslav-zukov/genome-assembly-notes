@@ -11,7 +11,7 @@ We propose a radically new approach to this problem. Instead of collecting sever
 ### Proposed approach
 1. Sequence the DNA with Oxford Nanopore (Generate Nanopore signal)
 2. Run Wavelet transform on the nanopore signal (Reads → $\mathbb{R}^n$ )
-3. Convert the reads from $\mathbb{R}^n$ into a random graph representation (could be [[GIRG]])
+3. Convert the reads from $\mathbb{R}^n$ into a random graph representation (potentially [[GIRG]])
 	1. Represent each read as a vertex
 	2. Apply the *distance* function that calculates overlap quality of signals
 	3. Assign the probability of an edge to the *distance* between two nodes
@@ -40,18 +40,14 @@ Following initiatives are to be considered for gaining the insight. For a couple
 - What's the computational complexity
 
 ### Theoretical framing of the problem
-Imagine you have $k$ strips of paper with the same signal printed on them. Then one takes a scissors and cuts strips into multiple pieces in random places. The pieces have average length of $l$ and some length distribution $X$.
+Imagine you have $k$ strips of paper with the same signal printed on them. Then one takes a scissors and cuts strips into multiple pieces in random places. The pieces have average length of $l$ and some length distribution $X$
 
 The goal is to reconstruct the original signal.
 ### Main - building new raw probabilistic assembler
 1. Verify assumptions
 2. Construct the theoretical solution and build the proof of concept
 	1. Create a distance function for finding overlaps from wavelet transformed waves
-		1. somehow leverage the regularity of the trig functions
-		2. differentiate between prefix and postfix overlaps
-	2. Research how exactly can we apply [[GIRG]]s - theoretical solution
-		1. encoding of $\mathbb{R}^n$ into the graph with the distance function
-		2. finding the most probable graphs
+	2. Research how exactly can we apply [[random graphs]]
 	3. Try to create a unified end-to-end theoretical framework
 3. Collect a team of experienced engineers and build the thing using software best practices
 
