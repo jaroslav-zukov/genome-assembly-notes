@@ -1,12 +1,10 @@
 Before the each phase define a clear SMART goals and schedule a report presentation with people interested.
 ### 1. Getting started - 2 weeks
-Run simple assembly, visualize and benchmark resulting assembly graphs
-	- [[Verkko]]
-	- [[Hifiasm]]
-	- [[Flye]]
-Create a short overview/presentation/description of the inner workings and computational complexity of those solutions. How the computational resources are utilized?
+[[Getting started - Phase 1]]
 
-### 2. Proof of concept - FFT and distance function - 1 week
+
+
+### 2. Proof of concept - Wavelets and distance function - 1 week
 Create a synthetic pipeline which will assemble the signal function with added distortion on top of it. Here's the rough overview of the steps needed
 1. Create synthetic signal ($\mathbb{R} \rightarrow \mathbb{R}$  function)
 2. Slice and distort the signals in the different ways
@@ -14,7 +12,7 @@ Create a synthetic pipeline which will assemble the signal function with added d
 	2. First try with clean signal
 	3. Add the small noice on top, play with noice intensity
 3. Reconstruct the original signal (use overlap brute force approach)
-	1. FFT the signal
+	1. DWT the signal
 	2. Find the overlap probability and size
 
 ### 3. Proof of concept - Random graphs and hamiltonian cycles - 2 weeks 

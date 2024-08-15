@@ -1,0 +1,1 @@
+Dataformat introduced by nanopore that aims for efficiency and ease of use.

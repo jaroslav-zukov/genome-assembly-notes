@@ -1,1 +1,1 @@
-
+[[Duplex technology]]
