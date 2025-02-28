@@ -12,4 +12,4 @@
 	- accuracy: close to 100%
 	- cost: ~$0.1/kb
 
-TODO: How the sequencing was done in the past
+TODO: How the sequencing was done in the past → Sanger?

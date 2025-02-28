@@ -51,9 +51,7 @@ The goal is to reconstruct the original signal.
 	3. Try to create a unified end-to-end theoretical framework
 3. Collect a team of experienced engineers and build the thing using software best practices
 
-**Timeline →**
-> [!info] [[Timeline of the sub-projects]]
-
+**[[Milestones]]**
 ___
 For more context:
 - What is genome assembly? → [[Introduction to genome assembly]]

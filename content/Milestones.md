@@ -1,10 +1,10 @@
 Before the each phase define a clear SMART goals and schedule a report presentation with people interested.
-### 1. Getting started - 2 weeks
+### 1. Getting started
 [[Getting started - Phase 1]]
 
 
 
-### 2. Proof of concept - Wavelets and distance function - 1 week
+### 2. Proof of concept - Wavelets and distance function
 Create a synthetic pipeline which will assemble the signal function with added distortion on top of it. Here's the rough overview of the steps needed
 1. Create synthetic signal ($\mathbb{R} \rightarrow \mathbb{R}$  function)
 2. Slice and distort the signals in the different ways
@@ -15,13 +15,13 @@ Create a synthetic pipeline which will assemble the signal function with added d
 	1. DWT the signal
 	2. Find the overlap probability and size
 
-### 3. Proof of concept - Random graphs and hamiltonian cycles - 2 weeks 
+### 3. Proof of concept - Random graphs and hamiltonian cycles
 Research the idea of encoding the overlap distances into the edge probabilities, visualizing and assessing the assembly. Use synthetic data.
 Try to implement [[GIRG]] solution and find a most probable hamiltonian cycles in them. 
 
 Don't think about computational complexity and parallelism at this point.
 
-### 4. Finalize theoretical approach and analyze complexity - 1 week
+### 4. Finalize theoretical approach and analyze complexity
 Create an end-to-end theoretical description for going from raw reads to the assembly. Analyze the computational complexity and opportunities for parallelism
 
 ### 5. Start with the implementation

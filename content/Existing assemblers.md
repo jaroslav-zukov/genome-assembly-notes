@@ -26,6 +26,9 @@ Support tools:
 	- error correction for ont
 - Minimap2 https://github.com/lh3/minimap2?tab=readme-ov-file#algo
 
+Scaffolding
+- https://github.com/c-zhou/yahs
+
 
 Existing raw nanopore signal processing ideas:
 - Signal alignment 

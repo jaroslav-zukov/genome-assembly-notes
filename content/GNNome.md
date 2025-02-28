@@ -8,3 +8,6 @@ https://github.com/lbcb-sci/GNNome/tree/main
 For graph generation it's suggested
 - HiFi → [[Hifiasm]]
 - ONT → [[Raven]]
+
+
+[[Pig assembly with GNNome experiment]]

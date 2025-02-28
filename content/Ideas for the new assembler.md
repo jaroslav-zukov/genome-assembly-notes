@@ -32,3 +32,13 @@ Use programming language with a support of parallel computing. Here are a couple
 
 ### Signal processing
 Can some conversion be done already on the hardware level? Like when reading from a sequencing device? Can we leverage Digital signal processors for this?
+
+
+___
+### Math thing - ideas after reading [paper](https://arxiv.org/pdf/2410.17801)  on 1.11.24
+
+We know, that the signals are continuous and that the speed of nucleotides that come through pore may vary. But it also varies continuously. The difference between two wavelet transformed signals of which one is fast and second is slow is some continuous function that is added to the wavelet frequencies → all frequencies are shifted the same. 
+
+→ Aside from aligning two transformed signals to each other, we should look into the epsilon neighborhood for the scaling in order to include the effect of speed variation function
+
+It's interesting to do a research and find some patterns and regularities of the speed variation function (it must be Lipschitz continuous, what is the L?)
